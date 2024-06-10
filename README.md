@@ -1,6 +1,6 @@
 ---
-title: Dog or Cat?
-emoji: 🦀
+title: Bear Classifier
+emoji: 🐨
 colorFrom: pink
 colorTo: blue
 sdk: gradio
