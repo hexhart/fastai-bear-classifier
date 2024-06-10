@@ -9,10 +9,10 @@ import gradio as gr
 def is_cat(x): return x[0].isupper()
 
 # Cell
-learn = load_learner('model.pkl')
+learn = load_learner('bear-export.pkl')
 
 # Cell
-categories = ('Dog', 'Cat')
+categories = ('Black', 'Grizzly', 'Teddy')
 
 def classify_image(img):
     pred,idx,probs = learn.predict(img)
@@ -21,7 +21,7 @@ def classify_image(img):
 # Cell
 image = gr.inputs.Image(shape=(192, 192))
 label = gr.outputs.Label()
-examples = ['dog.jpg', 'cat.jpg', 'dunno.jpg']
+examples = ['black_bear1.jpg', 'grizzly_bear1.jpg', 'teddy_bear1.jpg']
 
 intf = gr.Interface(fn=classify_image, inputs=image, outputs=label, examples=examples)
 intf.launch(inline=False)
