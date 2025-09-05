@@ -1,2 +1,6 @@
-fastai
-
+fastai==2.7.13
+fastcore==1.5.29
+fastprogress==1.0.3
+fastdownload==0.0.7
+torch==2.0.1
+torchvision==0.15.2
