@@ -1,6 +1,6 @@
 ---
-title: Bear Classifier
-emoji: 🐨
+Title: Bear Classifier
+Emoji: 🐨
 colorFrom: pink
 colorTo: blue
 sdk: gradio
